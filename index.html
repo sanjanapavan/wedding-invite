@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Royal Wedding Invite</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-bg"></div>
+  <div id="glitterLayer" class="glitter-layer"></div>
+
+  <section id="cover" class="cover-screen active">
+    <div class="cover-slideshow" id="coverSlideshow"></div>
+    <div class="cover-overlay"></div>
+    <div class="mandala-wrap">
+      <div class="mandala mandala-outer"></div>
+      <div class="mandala mandala-inner"></div>
+    </div>
+    <div class="cover-card royal-frame">
+      <p class="eyebrow">Wedding Celebration</p>
+      <p class="cover-hosted">Together with their families</p>
+      <h1 id="coverCoupleNames">Pavan <span>&</span> Sanjana</h1>
+      <p id="coverWeddingDate">Monday, August 24, 2026</p>
+      <p id="coverVenueText" class="cover-venue-text">Wedding Ceremony Venue to be Updated</p>
+      <button id="openInviteBtn">Open Invitation</button>
+      <p class="cover-note">Tap to enter</p>
+    </div>
+  </section>
+
+  <audio id="bgMusic" loop preload="auto">
+    <source src="assets/music.mp3" type="audio/mpeg">
+  </audio>
+
+  <main id="mainContent" class="hidden">
+    <header class="hero">
+      <div class="hero-slideshow" id="heroSlideshow"></div>
+      <div class="overlay"></div>
+      <div class="floating-lights"></div>
+      <nav class="topbar">
+        <div class="brand">Royal Premium Invite</div>
+        <button id="musicToggle" class="ghost-btn">Play Music</button>
+      </nav>
+      <div class="hero-content royal-frame slim-frame">
+        <div class="ganesha">ॐ</div>
+        <p class="eyebrow">Wedding Celebration</p>
+        <h1 id="coupleNames">Pavan <span>&</span> Sanjana</h1>
+        <p id="weddingLine">Together with their families, invite you to celebrate their wedding festivities</p>
+        <p class="hero-date" id="weddingDateTime">August 24, 2026 • 8:00 AM CST</p>
+        <p class="hero-venue" id="mainVenue">Wedding Ceremony Venue to be Updated</p>
+        <a href="#coupleSection" class="hero-scroll">Scroll to explore</a>
+        <p id="musicStatus" class="music-status"></p>
+      </div>
+    </header>
+
+    <section class="section couple-section" id="coupleSection">
+      <div class="section-inner narrow">
+        <h2>The Couple</h2>
+        <p class="section-subtitle">Two families, many traditions, one timeless celebration.</p>
+        <div class="couple-grid">
+          <article class="person-card royal-frame">
+            <div class="person-photo-frame"><img id="groomImage" src="assets/image1.jpeg" alt="Groom photo"></div>
+            <h3 id="groomNameCard">Pavan</h3>
+            <p class="person-role">Son of</p>
+            <p id="groomParents">Rajendra Reddy & Ratna</p>
+          </article>
+          <article class="person-card royal-frame">
+            <div class="person-photo-frame"><img id="brideImage" src="assets/image2.jpeg" alt="Bride photo"></div>
+            <h3 id="brideNameCard">Sanjana</h3>
+            <p class="person-role">Daughter of</p>
+            <p id="brideParents">Yogananda & Sireesha</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section ornate" id="eventsSection">
+      <div class="section-inner">
+        <h2>Wedding Festivities</h2>
+        <div id="eventsContainer" class="events-grid"></div>
+      </div>
+    </section>
+
+    <section class="section ornate countdown-section">
+      <div class="section-inner">
+        <h2>Countdown to the Big Day</h2>
+        <div id="countdown" class="countdown"></div>
+      </div>
+    </section>
+
+    <section class="section ornate gallery-section">
+      <div class="section-inner">
+        <h2>Moments of Us</h2>
+        <div id="galleryShowcase" class="gallery-showcase"></div>
+        <div id="galleryThumbs" class="gallery-thumbs"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-inner narrow">
+        <h2>Pre-Wedding Video & Live</h2>
+        <div class="action-grid">
+          <a id="videoButton" class="action-btn" href="#" target="_blank" rel="noopener">Pre-Wedding Video</a>
+          <a id="liveButton" class="action-btn" href="#" target="_blank" rel="noopener">Wedding Live Stream</a>
+          <a id="rsvpButton" class="action-btn" href="#" target="_blank" rel="noopener">RSVP on WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer royal-frame slim-frame">
+      <p id="footerText">We would be delighted to celebrate this special occasion with you.</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
